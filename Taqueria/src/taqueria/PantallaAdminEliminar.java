@@ -159,13 +159,13 @@ public class PantallaAdminEliminar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnEliminar2;
+    public javax.swing.JButton btnEliminar2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblId;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPrecio;
-    private javax.swing.JTextField txtIdEliminar;
-    private javax.swing.JTextField txtNombreEliminar;
-    private javax.swing.JTextField txtPrecioEliminar;
+    public javax.swing.JTextField txtIdEliminar;
+    public javax.swing.JTextField txtNombreEliminar;
+    public javax.swing.JTextField txtPrecioEliminar;
     // End of variables declaration//GEN-END:variables
 }

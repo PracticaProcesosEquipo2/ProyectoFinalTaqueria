@@ -159,13 +159,13 @@ public class PantallaAdminAgregar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAgregar2;
+    public javax.swing.JButton btnAgregar2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblId;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPrecio;
-    private javax.swing.JTextField txtIdAgregar;
-    private javax.swing.JTextField txtNombreAgregar;
-    private javax.swing.JTextField txtPrecioAgregar;
+    public javax.swing.JTextField txtIdAgregar;
+    public javax.swing.JTextField txtNombreAgregar;
+    public javax.swing.JTextField txtPrecioAgregar;
     // End of variables declaration//GEN-END:variables
 }

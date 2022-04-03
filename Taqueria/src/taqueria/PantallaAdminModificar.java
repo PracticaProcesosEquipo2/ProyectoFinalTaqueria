@@ -158,13 +158,13 @@ public class PantallaAdminModificar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnModificar2;
+    public javax.swing.JButton btnModificar2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblId;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPrecio;
-    private javax.swing.JTextField txtIdModificar;
-    private javax.swing.JTextField txtNombreModificar;
-    private javax.swing.JTextField txtPrecioModificar;
+    public javax.swing.JTextField txtIdModificar;
+    public javax.swing.JTextField txtNombreModificar;
+    public javax.swing.JTextField txtPrecioModificar;
     // End of variables declaration//GEN-END:variables
 }

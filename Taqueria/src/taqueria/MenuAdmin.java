@@ -212,10 +212,10 @@ public class MenuAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnModificar;
-    private javax.swing.JButton btnRegresar;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnModificar;
+    public javax.swing.JButton btnRegresar;
     private javax.swing.JLabel lblAgua;
     private javax.swing.JLabel lblBebidas;
     private javax.swing.JLabel lblLonganiza;
