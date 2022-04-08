@@ -15,6 +15,7 @@ public class Taqueria {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //System.out.println(getClass().getResource("/imagenes/Menu.png"));
     }
     
 }

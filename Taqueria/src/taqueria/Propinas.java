@@ -14,6 +14,7 @@ public class Propinas extends javax.swing.JFrame {
      * Creates new form Propinas
      */
     public Propinas() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

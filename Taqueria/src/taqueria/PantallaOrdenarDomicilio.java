@@ -14,6 +14,7 @@ public class PantallaOrdenarDomicilio extends javax.swing.JFrame {
      * Creates new form PantallaOrdenarDomicilio
      */
     public PantallaOrdenarDomicilio() {
+        this.setContentPane(new ImagenFondo2());
         initComponents();
     }
 

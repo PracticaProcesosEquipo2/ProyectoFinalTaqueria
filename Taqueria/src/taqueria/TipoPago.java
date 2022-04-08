@@ -14,6 +14,7 @@ public class TipoPago extends javax.swing.JFrame {
      * Creates new form TipoPago
      */
     public TipoPago() {
+        this.setContentPane(new ImagenFondo2());
         initComponents();
     }
 

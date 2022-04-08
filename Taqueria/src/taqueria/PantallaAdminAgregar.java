@@ -14,6 +14,7 @@ public class PantallaAdminAgregar extends javax.swing.JFrame {
      * Creates new form PantallaAdminModificar
      */
     public PantallaAdminAgregar() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

@@ -14,6 +14,7 @@ public class PantallaDatosRecibo extends javax.swing.JFrame {
      * Creates new form PantallaDatosRecibo
      */
     public PantallaDatosRecibo() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

@@ -14,6 +14,7 @@ public class PantallaAdminModificar extends javax.swing.JFrame {
      * Creates new form PantallaAdminModificar
      */
     public PantallaAdminModificar() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

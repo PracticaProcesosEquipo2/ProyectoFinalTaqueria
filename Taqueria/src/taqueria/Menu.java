@@ -14,6 +14,7 @@ public class Menu extends javax.swing.JFrame {
      * Creates new form Menu
      */
     public Menu() {
+        this.setContentPane(new ImagenFondo2());
         initComponents();
     }
 
@@ -41,44 +42,34 @@ public class Menu extends javax.swing.JFrame {
 
         lblMenu.setBackground(new java.awt.Color(153, 204, 255));
         lblMenu.setFont(new java.awt.Font("Sketch 3D", 0, 48)); // NOI18N
-        lblMenu.setForeground(new java.awt.Color(0, 0, 0));
         lblMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMenu.setText("Menu");
 
         lblTacos.setFont(new java.awt.Font("Supersonic Rocketship", 2, 48)); // NOI18N
-        lblTacos.setForeground(new java.awt.Color(0, 0, 0));
         lblTacos.setText("Tacos");
 
         lblBebidas.setFont(new java.awt.Font("Supersonic Rocketship", 2, 48)); // NOI18N
-        lblBebidas.setForeground(new java.awt.Color(0, 0, 0));
         lblBebidas.setText("Bebidas");
 
         lblPastor.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblPastor.setForeground(new java.awt.Color(0, 0, 0));
         lblPastor.setText("* Taco de pastor  $7");
 
         lblSuadero.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblSuadero.setForeground(new java.awt.Color(0, 0, 0));
         lblSuadero.setText("* Taco de suadero $9");
 
         lblLonganiza.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblLonganiza.setForeground(new java.awt.Color(0, 0, 0));
         lblLonganiza.setText("* Taco de longaniza $12");
 
         lblTripa.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblTripa.setForeground(new java.awt.Color(0, 0, 0));
         lblTripa.setText("* Taco de tripa $12");
 
         lblAgua.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblAgua.setForeground(new java.awt.Color(0, 0, 0));
         lblAgua.setText("* Agua (horchata y jamaica) $18");
 
         lblRefresco.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblRefresco.setForeground(new java.awt.Color(0, 0, 0));
         lblRefresco.setText("* Regresco $15");
 
         lblPulque.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
-        lblPulque.setForeground(new java.awt.Color(0, 0, 0));
         lblPulque.setText("* Pulque $13");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -91,8 +82,8 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblTacos, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(119, 119, 119))
+                        .addComponent(lblBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(97, 97, 97))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblTripa, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -106,7 +97,7 @@ public class Menu extends javax.swing.JFrame {
                                     .addComponent(lblPulque, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblRefresco, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblAgua, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(9, Short.MAX_VALUE))))
+                        .addContainerGap(12, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)

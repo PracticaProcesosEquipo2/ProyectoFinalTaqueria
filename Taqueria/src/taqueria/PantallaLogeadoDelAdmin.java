@@ -14,6 +14,7 @@ public class PantallaLogeadoDelAdmin extends javax.swing.JFrame {
      * Creates new form PantallaLogeadoDelAdmin
      */
     public PantallaLogeadoDelAdmin() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

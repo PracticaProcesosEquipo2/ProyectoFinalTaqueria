@@ -14,6 +14,7 @@ public class descuentos extends javax.swing.JFrame {
      * Creates new form descuentos
      */
     public descuentos() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 

@@ -14,6 +14,7 @@ public class PantallaAdminEliminar extends javax.swing.JFrame {
      * Creates new form PantallaAdminModificar
      */
     public PantallaAdminEliminar() {
+        this.setContentPane(new ImagenFondo());
         initComponents();
     }
 
