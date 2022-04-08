@@ -44,43 +44,75 @@ public class MenuAdmin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblMenu.setBackground(new java.awt.Color(153, 204, 255));
-        lblMenu.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
+        lblMenu.setFont(new java.awt.Font("Sketch 3D", 0, 48)); // NOI18N
+        lblMenu.setForeground(new java.awt.Color(0, 0, 0));
         lblMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMenu.setText("Menu");
 
-        lblTacos.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
+        lblTacos.setFont(new java.awt.Font("Supersonic Rocketship", 2, 36)); // NOI18N
+        lblTacos.setForeground(new java.awt.Color(0, 0, 0));
         lblTacos.setText("Tacos");
 
-        lblBebidas.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
+        lblBebidas.setFont(new java.awt.Font("Supersonic Rocketship", 2, 36)); // NOI18N
+        lblBebidas.setForeground(new java.awt.Color(0, 0, 0));
         lblBebidas.setText("Bebidas");
 
-        lblPastor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblPastor.setText("Taco de pastor  $7");
+        lblPastor.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblPastor.setForeground(new java.awt.Color(0, 0, 0));
+        lblPastor.setText("* Taco de pastor  $7");
 
-        lblSuadero.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblSuadero.setText("Taco de suadero $9");
+        lblSuadero.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblSuadero.setForeground(new java.awt.Color(0, 0, 0));
+        lblSuadero.setText("* Taco de suadero $9");
 
-        lblLonganiza.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblLonganiza.setText("Taco de longaniza $12");
+        lblLonganiza.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblLonganiza.setForeground(new java.awt.Color(0, 0, 0));
+        lblLonganiza.setText("* Taco de longaniza $12");
 
-        lblTripa.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblTripa.setText("Taco de tripa $12");
+        lblTripa.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblTripa.setForeground(new java.awt.Color(0, 0, 0));
+        lblTripa.setText("* Taco de tripa $12");
 
-        lblAgua.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblAgua.setText("Agua (horchata y jamaica) $18");
+        lblAgua.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblAgua.setForeground(new java.awt.Color(0, 0, 0));
+        lblAgua.setText("* Agua (horchata y jamaica) $18");
 
-        lblRefresco.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblRefresco.setText("Regresco $15");
+        lblRefresco.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblRefresco.setForeground(new java.awt.Color(0, 0, 0));
+        lblRefresco.setText("* Regresco $15");
 
-        lblPulque.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblPulque.setText("Pulque $13");
+        lblPulque.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblPulque.setForeground(new java.awt.Color(0, 0, 0));
+        lblPulque.setText("* Pulque $13");
 
+        btnAgregar.setBackground(new java.awt.Color(255, 102, 0));
+        btnAgregar.setFont(new java.awt.Font("Supersonic Rocketship", 2, 14)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(0, 0, 0));
         btnAgregar.setText("Agregar");
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarActionPerformed(evt);
+            }
+        });
 
+        btnModificar.setBackground(new java.awt.Color(255, 102, 0));
+        btnModificar.setFont(new java.awt.Font("Supersonic Rocketship", 2, 12)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(0, 0, 0));
         btnModificar.setText("Modificar");
 
+        btnEliminar.setBackground(new java.awt.Color(255, 102, 0));
+        btnEliminar.setFont(new java.awt.Font("Supersonic Rocketship", 2, 14)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(0, 0, 0));
         btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
 
+        btnRegresar.setBackground(new java.awt.Color(255, 102, 0));
+        btnRegresar.setFont(new java.awt.Font("Supersonic Rocketship", 2, 14)); // NOI18N
+        btnRegresar.setForeground(new java.awt.Color(0, 0, 0));
         btnRegresar.setText("Regresar");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,78 +124,70 @@ public class MenuAdmin extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(104, 104, 104)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPastor)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnRegresar)
-                                .addGap(45, 45, 45)
-                                .addComponent(btnAgregar)
-                                .addGap(52, 52, 52)))
+                        .addGap(70, 70, 70)
+                        .addComponent(btnRegresar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                        .addComponent(btnAgregar)
+                        .addGap(59, 59, 59))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(124, 124, 124)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnModificar)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblBebidas)
-                                    .addComponent(lblAgua)
-                                    .addComponent(lblRefresco)
-                                    .addComponent(lblPulque))))
-                        .addGap(90, 90, 90))
+                                .addComponent(lblTacos, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(lblSuadero, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPastor, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblLonganiza, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblTripa, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lblTacos))
-                            .addComponent(lblLonganiza)
-                            .addComponent(lblSuadero)
-                            .addComponent(lblTripa))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(480, 480, 480)
-                .addComponent(btnEliminar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblRefresco, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPulque, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblAgua, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(btnEliminar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addComponent(btnModificar)
+                        .addGap(86, 86, 86))))
+            .addComponent(lblMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(32, 32, 32)
                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblBebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTacos, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTacos)
-                    .addComponent(lblBebidas))
-                .addGap(18, 18, 18)
+                    .addComponent(lblPastor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRefresco, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPastor)
-                    .addComponent(lblAgua))
-                .addGap(18, 18, 18)
+                    .addComponent(lblSuadero, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPulque, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSuadero)
-                    .addComponent(lblRefresco))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLonganiza)
-                    .addComponent(lblPulque))
-                .addGap(18, 18, 18)
-                .addComponent(lblTripa)
-                .addGap(81, 81, 81)
+                    .addComponent(lblAgua, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblLonganiza, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblTripa, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgregar)
                     .addComponent(btnModificar)
                     .addComponent(btnEliminar)
                     .addComponent(btnRegresar))
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         btnRegresar.getAccessibleContext().setAccessibleName("btnRegresar");
@@ -174,6 +198,14 @@ public class MenuAdmin extends javax.swing.JFrame {
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarActionPerformed
 
     /**
      * @param args the command line arguments

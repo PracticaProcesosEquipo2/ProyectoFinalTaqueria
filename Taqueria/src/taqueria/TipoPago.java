@@ -33,13 +33,16 @@ public class TipoPago extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblPagoEnLinea.setFont(new java.awt.Font("Helvetica Neue", 0, 48)); // NOI18N
+        lblPagoEnLinea.setFont(new java.awt.Font("Sketch 3D", 0, 48)); // NOI18N
+        lblPagoEnLinea.setForeground(new java.awt.Color(0, 0, 0));
         lblPagoEnLinea.setText("Pago en linea");
 
-        lblMetodo.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        lblMetodo.setText("Selecciona el método de pago");
+        lblMetodo.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        lblMetodo.setForeground(new java.awt.Color(0, 0, 0));
+        lblMetodo.setText("Selecciona el método de pago: ");
 
-        RbTarjetaCredito.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        RbTarjetaCredito.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        RbTarjetaCredito.setForeground(new java.awt.Color(0, 0, 0));
         RbTarjetaCredito.setText("Tarjeta de crédito");
         RbTarjetaCredito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,41 +50,42 @@ public class TipoPago extends javax.swing.JFrame {
             }
         });
 
-        RbTarjetaDebito.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        RbTarjetaDebito.setFont(new java.awt.Font("Supersonic Rocketship", 2, 18)); // NOI18N
+        RbTarjetaDebito.setForeground(new java.awt.Color(0, 0, 0));
         RbTarjetaDebito.setText("Tarjeta de débito");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(lblMetodo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(180, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblPagoEnLinea)
+                .addGap(137, 137, 137))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblPagoEnLinea)
-                        .addGap(149, 149, 149))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(362, 362, 362)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RbTarjetaDebito)
-                            .addComponent(RbTarjetaCredito))
-                        .addGap(108, 108, 108))))
+                            .addComponent(RbTarjetaCredito)
+                            .addComponent(RbTarjetaDebito)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(lblMetodo)))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(31, 31, 31)
                 .addComponent(lblPagoEnLinea)
-                .addGap(71, 71, 71)
+                .addGap(87, 87, 87)
                 .addComponent(RbTarjetaCredito)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblMetodo)
-                .addGap(4, 4, 4)
+                .addGap(5, 5, 5)
+                .addComponent(lblMetodo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
                 .addComponent(RbTarjetaDebito)
-                .addContainerGap(233, Short.MAX_VALUE))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
 
         pack();
